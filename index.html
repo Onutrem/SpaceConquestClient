@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Space Conquest</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="images/logo.png" />
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div id="homeContainer" class="container">
+            <div class="row">
+                <div class="absolute-center-div responsive-div">
+                    <div class="col-sm-12 col-md-10 col-md-offset-1">
+                        <br/>
+                        <h2 class="DIAMOND_NEON">Space Conquest IO</h2>
+                        <br/><br/>
+
+                        <form id="playForm" action="">
+                            <p><b>Username</b></p>
+                            <input id="playUsername" class="form-control" type="text" maxlength="15" autofocus required/> 
+                            <br/>
+                            <p><b>Server</b></p>
+                            <select class="form-control" disabled>
+                                <option>EUW #Alpha</option>
+                            </select>
+                            <br/>
+                            <p>Controls : </p>
+                            <ul>
+                                <li>Left click : Shoot</li>
+                                <li>Right click : Keep position</li>
+                                <li>Spacebar : Speed boost</li>
+                            </ul>
+                            <br/>
+                            <input id="playBtn" type="submit" value="Join the battle !" class="form-control btn btn-info"/>
+                        </form>    
+                        <br/>
+                        <p class="text-muted small">Copyright © 2017. Onutrem. All rights reserved.</p>
+                    </div>  
+                </div>    
+            </div>
+        </div>
+        <div id="gameContainer" class="noSelect" hidden oncontextmenu="return false;">
+            <canvas id="gameCanvas"></canvas>
+            <div id="interface">
+                <h4><span id="interfaceUsername"></span> <span class="blue">LV <span id="interfaceLevel"></span></span></h4>
+                <p class="yellow"><span id="interfaceHp">5</span> / <span id="interfaceMaxHp">5</span> HP</p>
+                <p class="blue"><span id="interfaceXp">0</span> / <span id="interfaceMaxXp">100</span> XP</p>
+                <p class="green"><span id="interfaceBoost">3000</span> / <span id="interfaceMaxBoost">3000</span> BOOST</p>
+            </div>
+            <div id="leaderboard"></div>
+            <div id="map">
+                <canvas id="mapCanvas"></canvas>
+            </div>
+            <div id="gameOver" hidden>
+                <div id="gameOverContent">
+                    <h1 class="RUBY_NEON">Game Over</h1>
+                    <br/>
+                    <h4>Stay determined !</h4>
+                    <br/>
+                    <button class="btn btn-danger" onClick="joinGame();">Retry</button>
+                </div>
+            </div>
+        </div>
+        <!--LIB SCRIPTS-->
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/socket.io.js" type="text/javascript"></script>
+        <!--HOME SCRIPT-->
+        <script src="js/main.js" type="text/javascript"></script>
+        <!--GAME SCRIPTS-->
+        <script src="game/js/util.js" type="text/javascript"></script>
+        <script src="game/js/game.js" type="text/javascript"></script>
+        <script src="game/js/player.js" type="text/javascript"></script>
+        <script src="game/js/star.js" type="text/javascript"></script>
+        <script src="game/js/blackHole.js" type="text/javascript"></script>
+        <script src="game/js/asteroid.js" type="text/javascript"></script>
+        <script src="game/js/bullet.js" type="text/javascript"></script>
+        <script src="game/js/sprite.js" type="text/javascript"></script>
+    </body>
+</html>

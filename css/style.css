@@ -1,0 +1,156 @@
+body, html {
+    background-color: #000;
+    background-image: url('../images/background.png');
+    background-repeat: repeat;
+    margin: 0px;
+    color: #fff;
+    width:100%;
+    height:100%;
+    font-family: Impact;
+}
+
+a {
+    color: #00cccc;
+}
+
+#gameCanvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #000;
+}
+
+#gameContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#leaderboard {
+    position: absolute;
+    width: 150px;
+    height: 300px;
+    right: 10px;
+    top: 10px;
+    background-color: rgba(68, 68, 68, 0.3);
+    padding: 5px;
+    font-size: 14px;
+}
+
+#interface {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    right: 10px;
+    bottom: 10px;
+    background-color: rgba(68, 68, 68, 0.3);
+    padding: 5px;
+    font-size: 14px;
+}
+
+#gameOver {
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    left: 50%;
+    top: 50%;
+}
+
+#gameOverContent {
+    text-align: center;
+    position: relative;
+    left: -50%;
+    top: -50%;
+    background-color: rgba(68, 68, 68, 0.3);
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 14px;
+    box-shadow: 
+        0 0 10px #f00, 
+        0 0 15px #f00,
+        0 0 20px #f00,
+        0 0 25px #f00;
+}
+
+#map {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 10px;
+    bottom: 10px;
+    background-color: rgba(68, 68, 68, 0.3);
+
+}
+
+#gameCanvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.absolute-center-div {
+    margin: auto;
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    bottom: 0; 
+    right: 0;
+}
+
+.absolute-center-div.responsive-div {
+    width: 400px; 
+    height: 500px;
+    min-width: 200px;
+    max-width: 500px;
+    padding: 10px;
+    background-color: rgba(0, 0, 20, 0.6);
+    box-shadow: 
+        0 0 10px #00cccc, 
+        0 0 15px #00cccc,
+        0 0 20px #00cccc,
+        0 0 25px #00cccc;
+    border-radius: 10px;
+}
+
+.DIAMOND_NEON {
+    margin: 0 auto;
+    color: white;
+    text-shadow: 0 0 10px #00ced2, 
+        0 0 15px #00ced2, 
+        0 0 30px #00ced2, 
+        0 0 30px #00ced2, 
+        0 0 30px #00ced2;
+}
+
+.RUBY_NEON {
+    margin: 0 auto;
+    color: white;
+    text-shadow: 0 0 10px #ff0303, 
+        0 0 15px #ff0303, 
+        0 0 30px #ff0303, 
+        0 0 30px #ff0303, 
+        0 0 30px #ff0303;
+}
+
+.noSelect {
+    cursor: default;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                          supported by Chrome and Opera */
+}
+
+.yellow {
+    color : yellow;
+}
+
+.green {
+    color: #00f00a;
+}
+
+.blue {
+    color: #00b8ff;
+}
