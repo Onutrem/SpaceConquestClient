@@ -201,10 +201,6 @@ var Player = function (id, username, x, y, angle, hp, maxHp, level, image, xPoin
             ctx.fillStyle = '#008606';
             ctx.fillRect(this.interpX - 5, this.interpY + this.image.height + 21, boostWidth, boostHeight);
 
-            //Background2
-            ctx.fillStyle = '#003e02';
-            ctx.fillRect(this.interpX - 5, this.interpY + this.image.height + 21, boostWidth / (this.maxBoost / 1000), boostHeight);
-
             ctx.fillStyle = '#00f00a';
             ctx.fillRect(this.interpX - 5, this.interpY + this.image.height + 21, (1 - this.boostValue / this.maxBoost) * boostWidth, boostHeight);
         }

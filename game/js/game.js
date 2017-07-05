@@ -5,7 +5,7 @@ var debug = false;
 
 //Constantes
 
-var MAP_SIZE = 6000;
+var MAP_SIZE = 3000;
 var UPDATE_TICKRATE = 20;
 
 
